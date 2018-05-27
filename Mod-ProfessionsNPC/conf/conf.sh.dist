@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+#
+# CUSTOM
+#
+
+DB_WORLD_CUSTOM_PATHS+=(
+	$ProfessionNPC_ROOT"/data/sql/db-world/"
+)
