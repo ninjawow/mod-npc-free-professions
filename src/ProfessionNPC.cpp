@@ -168,7 +168,7 @@ public:
 
 	bool IsSecondarySkill(SkillType skill) const
 	{
-		return skill == SKILL_COOKING || skill == SKILL_FIRST_AID;
+		return skill == SKILL_COOKING || skill == SKILL_FIRST_AID || skill == SKILL_FISHING;
 	}
 
 	void CompleteLearnProfession(Player *pPlayer, Creature *pCreature, SkillType skill)
