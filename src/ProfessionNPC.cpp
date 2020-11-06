@@ -222,7 +222,7 @@ public:
         if (SkillCount > 0 && player->HasSkill(Skill))
             SkillCount--;
 
-        return SkillCount < 2;
+        return SkillCount < sWorld->getIntConfig(CONFIG_MAX_PRIMARY_TRADE_SKILL);
     }
 };
 
