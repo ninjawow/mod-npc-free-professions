@@ -166,24 +166,24 @@ public:
                 {
                     if (SkillLineAbilityEntry const *SkillLine = sSkillLineAbilityStore.LookupEntry(i))
                     {
-                        if (SkillLine->skillId != SkillInfo->id)
+                        if (SkillLine->SkillLine != SkillInfo->id)
                             continue;
 
-                        if (SkillLine->forward_spellid)
+                        if (SkillLine->SupercededBySpell)
                             continue;
 
-                        if (SkillLine->racemask != 0)
+                        if (SkillLine->RaceMask != 0)
                             continue;
 
-                        if (SkillLine->classmask && (SkillLine->classmask & ClassMask) == 0)
+                        if (SkillLine->ClassMask && (SkillLine->ClassMask & ClassMask) == 0)
                             continue;
 
-                        SpellInfo const *SpellInfo2 = sSpellMgr->GetSpellInfo(SkillLine->spellId);
+                        SpellInfo const *SpellInfo2 = sSpellMgr->GetSpellInfo(SkillLine->Spell);
 
                         if (!SpellInfo2 || !SpellMgr::IsSpellValid(SpellInfo2))
                             continue;
 
-                        player->learnSpell(SkillLine->spellId);
+                        player->learnSpell(SkillLine->Spell);
                     }
                 }
             }
