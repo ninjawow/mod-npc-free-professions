@@ -28,8 +28,3 @@ AzerothCore v1.0.1+
 ###3) Re-run cmake and launch a clean build of AzerothCore
 
 **END**
-
-
-
-
-
