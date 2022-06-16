@@ -1,7 +1,7 @@
 #include "ScriptMgr.h"
 #include "Player.h"
 #include "ScriptedGossip.h"
-#include "ProfessionNPC_scripts_loader.h"
+#include "loader.h"
 
 class CreatureScript_Professions : public CreatureScript
 {
