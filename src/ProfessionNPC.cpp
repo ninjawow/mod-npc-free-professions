@@ -1,12 +1,11 @@
 #include "ScriptMgr.h"
 #include "Player.h"
 #include "ScriptedGossip.h"
-#include "loader.h"
 
 class CreatureScript_Professions : public CreatureScript
 {
 public:
-    CreatureScript_Professions() : CreatureScript("CreatureScript_Professions") {}
+    CreatureScript_Professions() : CreatureScript("npc_free_professions") {}
 
     bool OnGossipHello(Player *player, Creature *creature) override
     {
