@@ -5,5 +5,5 @@
 #
 
 DB_WORLD_CUSTOM_PATHS+=(
-    $MOD_PROFESSION_NPC_ROOT"/sql/world/base/"
+    $MOD_PROFESSION_NPC_ROOT"data/sql/db-world/"
 )
